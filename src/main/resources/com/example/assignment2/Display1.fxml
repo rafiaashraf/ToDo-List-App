@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.DisplayController">
+    <children>
+        <ImageView fitHeight="640.0" fitWidth="834.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@kro.jpg" />
+            </image>
+        </ImageView>
+        <VBox layoutX="14.0" layoutY="6.0" prefHeight="176.0" prefWidth="260.0">
+            <children>
+                <MenuButton fx:id="mbMain" alignment="CENTER" layoutX="5.0" mnemonicParsing="false" text="MenuButton">
+                    <items>
+                        <MenuItem fx:id="miInsert" mnemonicParsing="false" onAction="#Insert" text="INSERT" />
+                        <MenuItem fx:id="miUpdate" mnemonicParsing="false" onAction="#Update" text="UPDATE" />
+                        <MenuItem fx:id="miDisplay" mnemonicParsing="false" onAction="#Display" text="DISPLAY" />
+                        <MenuItem fx:id="miSearch" mnemonicParsing="false" onAction="#Search" text="SEARCH" />
+                        <MenuItem fx:id="miRemove" mnemonicParsing="false" onAction="#Remove" text="REMOVE" />
+
+                    </items>
+                </MenuButton>
+            </children>
+        </VBox>
+        <ListView fx:id="lv" layoutX="144.0" layoutY="216.0" prefHeight="255.0" prefWidth="343.0" />
+        <Label layoutX="162.0" layoutY="182.0" prefHeight="34.0" prefWidth="343.0" text="Date , Time , Subject ,Description , Location">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="175.0" layoutY="119.0" prefHeight="34.0" prefWidth="282.0" text="        STORED DATA">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
